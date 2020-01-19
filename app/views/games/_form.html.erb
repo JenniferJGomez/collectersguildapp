@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=BioRhyme|Bungee|Bungee+Shade&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<%@game.errors.full_messages.each do |msg|%>
+    <%=msg%>
+<%end%>
+
+<%=form_for @game do |f|%>
+<%= f.label "Enter Title Name"%>
+<%= f.text_field :title%><br>
+
+<%= f.label "Enter Genre"%>
+<%= f.text_field :genre%><br>
+
+<%= f.label "Enter Platform"%>
+<%= f.text_field :platform%><br>
+<%=f.submit%>
+<%end%>
+</div>
+
+</body>
+
+</html>

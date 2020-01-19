@@ -1,0 +1,6 @@
+<h1><%=@game.title%>'s Detail Page</h1>
+<div><h3>Genre: <%= @game.genre%></h3> </div>
+<div><h3>Platform: <%= @game.platform%></h3></div>
+<%= link_to "Edit Game", edit_game_path(@game)%>
+<%=link_to "Delete Game", game_path(@game), :method => "delete"%>
+

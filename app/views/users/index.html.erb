@@ -1,0 +1,8 @@
+<h1>Users Index Page</h1>
+
+<% @users.each do |user|%>
+    <div><h3><%= link_to user.username, user_path(user)%>'s Collection</h3></div>
+<%end%>
+
+<%= link_to "Create New User", new_user_path%>
+
